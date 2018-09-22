@@ -43,7 +43,13 @@ private:
   Eigen::MatrixXd R_laser_;
   Eigen::MatrixXd R_radar_;
   Eigen::MatrixXd H_laser_;
-  Eigen::MatrixXd Hj_;
+  Eigen::MatrixXd H_radar_;
+  Eigen::MatrixXd P_;
+  Eigen::MatrixXd F_;
+
+  //acceleration noise components
+	float acc_noise_x;
+	float acc_noise_y;
 };
 
 #endif /* FusionEKF_H_ */
